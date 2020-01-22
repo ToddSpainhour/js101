@@ -16,7 +16,10 @@ const evenOdd = (pickANumber) => {
 }
 
 console.log("The number below for for question number one.")
-console.log(evenOdd(246239842934))
+console.log(evenOdd(1))
+console.log(evenOdd(2))
+console.log(evenOdd(3))
+
 
 
 
@@ -50,7 +53,7 @@ if (pickAWord == pickAWord.reverse) {
 }
 
 amIAPalindrome('racecar');
-*/
+
 
 const pickAWordReversed = pickAWord.reverse
 
@@ -65,6 +68,21 @@ const amIAPalindrome = (pickAWord) => {
 
 amIAPalindrome("dad")
 console.log(pickAWordReversed)
+*/
+
+const amIAPalindrome = (pickAWord) => {
+const pickAWordReversed = pickAWord.split('').reverse().join('');
+if(pickAWord === pickAWordReversed) {
+return true;
+} else {
+return false;
+}
+}
+
+console.log(amIAPalindrome('dad')) //true
+console.log(amIAPalindrome('joe')) //false
+console.log(amIAPalindrome('mom')) //true
+console.log(amIAPalindrome('bobby')) //false
 
 
 
@@ -73,3 +91,15 @@ console.log(pickAWordReversed)
 // Lawrence the wide mouth frog is particularly interested in the eating habits of other creatures.
 // He just can't stop asking the creatures he encounters what they like to eat. But then he meet the alligator who just LOVES to eat the lips of wide-mouthed frogs!
 // Given a string with the animal name, that Lawrence encounters, output small if the animal is an alligator (case insensitive) otherwise return wide.
+
+
+const animal = (str) => {
+if(str === 'alligator' ) {
+return "small"
+} else {
+    return "wide"
+}
+}
+
+console.log(animal('alligator')) // small
+console.log(animal('fish')) // wide
