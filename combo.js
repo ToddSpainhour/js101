@@ -15,12 +15,8 @@ const evenOdd = (pickANumber) => {
  }
 }
 
-
-console.log(evenOdd(24623984293))
-
-
-
-
+console.log("The number below for for question number one.")
+console.log(evenOdd(246239842934))
 
 
 
@@ -29,10 +25,12 @@ console.log(evenOdd(24623984293))
 // given a number, find its opposite. 2 = -2
 
 
+const oppositeNumber = (anyNumber) => {
+    return anyNumber - (anyNumber * 2)
+}
 
-
-
-
+console.log("The number below for for question number two.")
+console.log(oppositeNumber(364))
 
 
 
@@ -42,11 +40,31 @@ console.log(evenOdd(24623984293))
 // A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.
 // Console true if the given string is a palindrome. Otherwise, console false.
 
+/*
+const amIAPalindrome = (pickAWord) => {
+if (pickAWord == pickAWord.reverse) {
+    console.log(`${pickAWord} is a palindrome!`)
+} else {
+    console.log(`${pickAWord} is not a palindrome!`)
+}
+}
 
+amIAPalindrome('racecar');
+*/
 
+const pickAWordReversed = pickAWord.reverse
 
+const amIAPalindrome = (pickAWord) => {
+    
+    if (pickAWord === pickAWordReversed) {
+        console.log("It is a palindrome!")
+    } else {
+        console.log("It's not a palindrone!")
+    }
+}
 
-
+amIAPalindrome("dad")
+console.log(pickAWordReversed)
 
 
 
